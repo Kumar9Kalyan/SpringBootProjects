@@ -1,0 +1,32 @@
+Currency Exchange Service
+http://localhost:8000/currency-exchange/from/USD/to/INR
+
+Currency Conversion Service
+http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
+
+Eureka URL:
+http://localhost:8761
+
+Spring cloud API gate way URL:
+http://localhost:8765
+
+Other URLs for to call from API gateway:
+
+Upper Case:
+http://localhost:8765/CURRENCY-EXCHANGE/currency-exchange/from/USD/to/INR
+
+http://localhost:8765/CURRENCY-CONVERSION-SERVICE/currency-conversion/from/USD/to/INR/quantity/19
+http://localhost:8765/CURRENCY-CONVERSION-SERVICE/currency-conversion-feign/from/USD/to/INR/quantity/16
+
+Lower Case:
+http://localhost:8765/currency-exchange/currency-exchange/from/USD/to/INR
+
+http://localhost:8765/currency-conversion-service/currency-conversion/from/USD/to/INR/quantity/19
+http://localhost:8765/currency-conversion-service/currency-conversion-feign/from/USD/to/INR/quantity/16
+
+Custom URL:
+http://localhost:8765/currency-exchange/from/USD/to/INR
+
+http://localhost:8765/currency-conversion/from/USD/to/INR/quantity/70
+http://localhost:8765/currency-conversion-feign/from/USD/to/INR/quantity/16
+http://localhost:8765/currency-conversion-new/from/USD/to/INR/quantity/80
